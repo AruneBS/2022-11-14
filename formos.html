@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <title>Paštomatai</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            background-color: rgb(248, 249, 250);
+        
+        }
+        input{
+            margin: 27px 218px 10px;
+            float: left;
+            text-align: center;
+        }
+        .titulinis label{
+        border: 2px solid darkgray;
+        background-color: white;
+        width: 450px;
+        float: left;
+        display: inline-block;
+        }
+        
+        img{
+            width: 100px;
+            height: 60px;
+            margin: 14px 175px 14px 174px;
+            text-align: center;
+        }
+ 
+        
+        h4{
+            text-align: center;
+            font-weight: bold;
+            margin: 12px 2px 18px 0px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h5{
+            margin: 8px 0px 5px 0px;
+            color: grey;
+        }
+        p{
+            text-align: center;
+            margin: 12px 2px 18px 0px;;
+            font-family: 'Open Sans', sans-serif;
+            color: grey;
+        }
+        .pristaymo_vieta{
+            background-color: silver;    
+              
+         }
+        .pristatymo_miestas{
+            display: inline-block;
+            margin-left: 5px;
+            width: 48%;
+            text-align: left;
+        }
+        .variantai{
+            border: 1px solid darkgrey;
+            color: gray;
+            font-size: smaller;
+            text-align: left;
+            width: 80%;
+            height: 35px;
+        
+        }
+        span{
+            color: red;     
+        }
+        .pristatymo_miestas label{
+         display: inline-block;
+         margin-left: 5px;
+         width: 48%;
+         color: grey;
+         text-align: left;
+         font-size: 14px;
+         font-weight: bold;
+        }
+        .pristatymo_miestas input{
+            border: 1px solid darkgrey;
+            color: grey;
+            display: inline-block;
+            margin-left: 5px;
+            width: 80%;
+            text-align: left;
+            margin-top: 5px;
+            height: 35px;
+        }
+        ::placeholder{
+            color: #c3c6c9;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Pristatymas į paštomatus</h3>
+    <form action="https://google.com">
+        <div class="titulinis">
+            <label class="lpexpress">
+                <input type="radio" name="bendrove">
+            <img src="https://lpexpress.lt/assets/images/svg/logo.svg" alt="LPExpress">
+        <h4>Atsiėmimas LPEXPRESS paštomate</h4>  
+        <p>2-4 darbo dienos</p> 
+        <h4>1,99</h4>
+            </label>
+            <label class="omniva">
+                <input type="radio" name="bendrove">
+                
+            <img src="https://www.siusk24.lt/uploads/terms_couriers_page/image_top/22/omniva.png" alt="Omniva">
+            <h4>Atsiėmimas Omniva paštomate</h4>  
+            <p>2-4 darbo dienos</p> 
+            <h4>1,99</h4> 
+        </label>
+            <label class="dpd">
+                <input type="radio" name="bendrove">
+            <img src="https://www.dpd.com/wp-content/themes/DPD_NoLogin/images/DPD_logo_redgrad_rgb_responsive.svg" alt="DPD">
+              <h4>Atsiėmimas DPD paštomate</h4>    
+              <p>2-4 darbo dienos</p>
+              <h4>1,99</h4>
+        </label>
+        </div>
+        <h3>Pasirinkite pristatymo vietą</h3>
+ <div class="pristatymo_vieta">
+         <div class="pristatymo_miestas">
+<h5>Miestas<span>*</span></h5>   
+    <select class="variantai">
+       <option value="1">Vilnius</option>
+       <option value="2">Kaunas</option>
+       <option value="3">Klaipėda</option>
+       <option value="4">Šiauliai</option>
+       <option value="5">Panevėžys</option>
+    </select>
+        </div>
+    <div class="pristatymo_miestas">
+        <h5>Paštomato adresas (paštomatas)<span>*</span></h5>
+        <select class="variantai">
+        <option value="1">Maxima Grybo</option>
+        <option value="2">IKI Garliava</option>
+        <option value="3">Akropolis Klaipėda</option>
+        <option value="2">Lidl Panevėžys</option>
+        <option value="3">Maxima Šiauliai</option>
+     </select>
+    </div>
+</div>
+       <h3>Pateikti gavėjo duomenis</h3>
+<div class="pristatymo_vieta">
+    <div class="pristatymo_miestas">
+        <label>Vardas<span>*</span></label>
+        <input type="text" placeholder="Vardenis">
+    </div>
+        <div class="pristatymo_miestas">
+        <label>Pavardė<span>*</span></label>
+        <input type="text" placeholder="Pavardenis">
+    </div>
+    </div> 
+    <div class="pristatymo_vieta">   
+    <div class="pristatymo_miestas">
+        <label for="">Mobilaus telefonos numeris<span>*</span></label>
+        <input type="tel" placeholder="0037069888140">
+    </div>
+</div>
+
+</div>
+    </form>
+</body>
+</html>
